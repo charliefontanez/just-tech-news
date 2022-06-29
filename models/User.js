@@ -9,6 +9,9 @@ class User extends Model {
   }
 }
 
+// With user.init we create our tables using objects 
+// then later create routes to our database using sequelize and our express Requests
+
 User.init(
   {
       // TABLE COLUMN DEFINITIONS GO HERE
