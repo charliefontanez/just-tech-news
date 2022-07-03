@@ -6,11 +6,13 @@ class Vote extends Model {}
 
 Vote.init(
   {
+    // column one
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
     },
+    // column two
     user_id: {
       type: DataTypes.INTEGER,
       allowedNull: false,
