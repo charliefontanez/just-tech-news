@@ -74,7 +74,7 @@ router.post('/', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
-    })
+    });
 });
 
 router.post('/login', (req, res) => {
@@ -118,7 +118,7 @@ router.post('/logout', (req, res) => {
   else {
     res.status(404).end();
   }
-})
+});
 
 router.put('/:id', (req, res) => {
   User.update(req.body, {
